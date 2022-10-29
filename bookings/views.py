@@ -1,3 +1,15 @@
 from django.shortcuts import render
+from .models import Booking
 
 # Create your views here.
+
+def all_bookings(request):
+    """ A view to show all bookings, including sorting and search queries """
+
+    bookings = Booking.objects.all()
+
+    context = {
+        'bookings': bookings,
+    }
+
+    return render(request, 'home/index.html')
