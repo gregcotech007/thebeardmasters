@@ -25,9 +25,10 @@
                 Filter By
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-bookings-link">
-                <a href="" class="dropdown-item">Adult</a>
-                <a href="" class="dropdown-item">OAP / Student</a>
-                <a href="" class="dropdown-item">Child</a>
+                <a href="{% url 'bookings' %}?category=adult" class="dropdown-item">Adult</a>
+                <a href="{% url 'bookings' %}?category=oap,student" class="dropdown-item">OAP / Student</a>
+                <a href="{% url 'bookings' %}?category=child" class="dropdown-item">Child</a>
+                <a href="{% url 'bookings' %}?category=adult,oap,student,child" class="dropdown-item">All Filters</a>
             </div>
         </li>
 
@@ -36,8 +37,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-bookings-link">
-                <a href="" class="dropdown-item">Combo Offers</a>
-                <a href="" class="dropdown-item">Discount Days</a>
+                <a href="{% url 'bookings' %}?category=combo_offers" class="dropdown-item">Combo Offers</a>
+                <a href="{% url 'bookings' %}?category=discount_days" class="dropdown-item">Discount Days</a>
+                <a href="{% url 'bookings' %}?category=combo_offers,discount_days" class="dropdown-item">All Special Offers</a>
             </div>
         </li>
     </ul>
