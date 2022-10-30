@@ -12,4 +12,4 @@ def all_bookings(request):
         'bookings': bookings,
     }
 
-    return render(request, 'home/index.html')
+    return render(request, 'bookings/bookings.html', context)
