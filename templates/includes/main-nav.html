@@ -13,9 +13,9 @@
                 All Bookings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-bookings-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Rating</a>
-                <a href="" class="dropdown-item">By Category</a>
+                <a href="{% url 'bookings' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'bookings' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'bookings' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'bookings' %}" class="dropdown-item">All Bookings</a>
             </div>
         </li>
