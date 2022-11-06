@@ -90,14 +90,7 @@ class StripeWH_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                booking=booking,
-                                quantity=quantity,
-                            )
-                            order_line_item.save()
+
             except Exception as e:
                 if order:
                     order.delete()
@@ -106,6 +99,14 @@ class StripeWH_Handler:
                     status=500)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            status=200)
+
+    def handle_payment_intent_payment_failed(self, event):
+        """
+        Handle the payment_intent.payment_failed webhook from Stripe
+        """
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]}',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
