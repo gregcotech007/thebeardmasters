@@ -67,3 +67,14 @@ def booking_detail(request, booking_id):
     }
 
     return render(request, 'bookings/booking_detail.html', context)
+
+
+# def add_booking(request):
+#     """ Add a booking to the Bookings page """
+#     form = BookingForm()
+#     template = 'bookings/add_booking.html'
+#     context = {
+#         'form': form,
+#     }
+
+#     return render(request, template, context)
