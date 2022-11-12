@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Booking, Category
+from .forms import BookingForm
 
 # Create your views here.
 
@@ -69,12 +70,12 @@ def booking_detail(request, booking_id):
     return render(request, 'bookings/booking_detail.html', context)
 
 
-# def add_booking(request):
-#     """ Add a booking to the Bookings page """
-#     form = BookingForm()
-#     template = 'bookings/add_booking.html'
-#     context = {
-#         'form': form,
-#     }
+def add_booking(request):
+    """ Add a booking to the Bookings page """
+    form = BookingForm()
+    template = 'bookings/add_booking.html'
+    context = {
+        'form': form,
+    }
 
-#     return render(request, template, context)
+    return render(request, template, context)
