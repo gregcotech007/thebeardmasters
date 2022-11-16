@@ -72,7 +72,17 @@ def booking_detail(request, booking_id):
 
 def add_booking(request):
     """ Add a booking to the Bookings page """
-    form = BookingForm()
+    if request.method == 'POST':
+        form = BookingForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added booking!')
+            return redirect(reverse('add_booking'))
+        else:
+            messages.error(request, 'Failed to add booking. Please ensure the form is valid.')
+    else:
+        form = BookingForm()
+
     template = 'bookings/add_booking.html'
     context = {
         'form': form,
