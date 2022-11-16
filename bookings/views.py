@@ -89,3 +89,27 @@ def add_booking(request):
     }
 
     return render(request, template, context)
+
+
+def edit_booking(request, booking_id):
+    """ Edit a booking in the store """
+    booking = get_object_or_404(Booking, pk=booking_id)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, request.FILES, instance=booking)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated booking!')
+            return redirect(reverse('booking_detail', args=[booking.id]))
+        else:
+            messages.error(request, 'Failed to update booking. Please ensure the form is valid.')
+    else:
+        form = BookingForm(instance=booking)
+        messages.info(request, f'You are editing {booking.name}')
+
+    template = 'bookings/edit_booking.html'
+    context = {
+        'form': form,
+        'booking': booking,
+    }
+
+    return render(request, template, context)
