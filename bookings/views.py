@@ -75,9 +75,9 @@ def add_booking(request):
     if request.method == 'POST':
         form = BookingForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            booking = form.save()
             messages.success(request, 'Successfully added booking!')
-            return redirect(reverse('add_booking'))
+            return redirect(reverse('booking_detail',  args=[booking.id]))
         else:
             messages.error(request, 'Failed to add booking. Please ensure the form is valid.')
     else:
@@ -113,3 +113,11 @@ def edit_booking(request, booking_id):
     }
 
     return render(request, template, context)
+
+
+def delete_booking(request, booking_id):
+    """ Delete a booking from the store """
+    booking = get_object_or_404(Booking, pk=booking_id)
+    booking.delete()
+    messages.success(request, 'Booking deleted!')
+    return redirect(reverse('bookings'))
