@@ -56,6 +56,8 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
+    'newsletter',
+
 ]
 
 MIDDLEWARE = [
@@ -188,7 +190,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe
-FREE_DELIVERY_THRESHOLD = 50
+FREE_DELIVERY_THRESHOLD = 0 # Updated to Zero before online products are added
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
