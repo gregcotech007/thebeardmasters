@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -69,9 +70,13 @@ def booking_detail(request, booking_id):
 
     return render(request, 'bookings/booking_detail.html', context)
 
-
+@login_required
 def add_booking(request):
     """ Add a booking to the Bookings page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only Administrators are authorised.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BookingForm(request.POST, request.FILES)
         if form.is_valid():
@@ -90,9 +95,13 @@ def add_booking(request):
 
     return render(request, template, context)
 
-
+@login_required
 def edit_booking(request, booking_id):
     """ Edit a booking in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only Administrators are authorised.')
+        return redirect(reverse('home'))
+
     booking = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
         form = BookingForm(request.POST, request.FILES, instance=booking)
@@ -114,9 +123,13 @@ def edit_booking(request, booking_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_booking(request, booking_id):
     """ Delete a booking from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only Administrators are authorised.')
+        return redirect(reverse('home'))
+
     booking = get_object_or_404(Booking, pk=booking_id)
     booking.delete()
     messages.success(request, 'Booking deleted!')
