@@ -1,1 +1,1 @@
-web: gunicorn beardmasters.wsgi
+web: gunicorn beardmasters.wsgi:application
