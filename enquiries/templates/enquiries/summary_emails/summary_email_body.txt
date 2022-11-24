@@ -1,0 +1,19 @@
+Dear {{ enquiry_message.first_name}} {{ enquiry_message.last_name}},
+
+Thank you for your enquiry, we have provided a summary below.
+
+One of of Customer Service will be assigned your enquiry and will be in touch shortly.
+
+Message summary:
+Topic: {{ enquiry_message.get_topic_display }}
+First Name: {{ enquiry_message.first_name }}
+Last Name: {{ enquiry_message.last_name }}
+Email Address: {{ enquiry_message.Email }}
+{% if enquiry_message.phone_number %}Phone Number: {{ enquiry_message.phone_number }}{% endif %}
+
+Enquiry:
+{{ enquiry_message.message }}
+
+Many thanks,
+
+The Beard Masters
