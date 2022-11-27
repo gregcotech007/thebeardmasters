@@ -30,7 +30,7 @@ def subscribe(request):
     context = {
         'form': form,
     }
-    return render(request, 'home/index.html', context)
+    return render(request, 'newsletter/newsletter.html', context)
 
 
 @login_required
@@ -52,7 +52,7 @@ def newsletter(request):
             title = form.cleaned_data.get('title')
             message = form.cleaned_data.get('message')
             body = render_to_string(
-                'newsletters/newsletter_emails/newsletter_body.txt',
+                'newsletter/newsletter_emails/newsletter_body.txt',
                 {'message': message})
             email = [(title, body, email_host, [recipient])
                      for recipient in mail_list]
@@ -66,4 +66,4 @@ def newsletter(request):
     context = {
         'form': form,
     }
-    return render(request, 'newsletters/newsletter.html', context)
+    return render(request, 'newsletter/newsletter.html', context)
