@@ -159,6 +159,47 @@
     </script>
     {% endblock %}
 
- 
+    <!-- Footer -->
+  <footer class="text-white">
+    <div class="container content-container">
+      <section class="footer">
+        <div class="row">
+          <div class="col-12 page-header mb-4">
+            <h2 class="text-uppercase">Stay in touch:</h2>
+            <hr class="block-divider block-divider--short">
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-12 col-md-6">
+           <h3>Social Media</h3>
+           <p>Keep up to date with all our latest offers</p>
+           <a href="https://www.facebook.com/profile.php?id=100087944423529" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+         </div>
+         <div class="col-12 col-md-6">
+           <h2>Subscribe to our Newsletter!</h2>
+           <p>Get notified of exclusive offers and discounts</p>
+           <!-- Newsletter signup form here -->
+           <form action="{% url 'subscribe' %}" method="POST">
+                <div class="row d-flex justify-content-center">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <input id="email" name="email" type="email" class="form-control"
+                            placeholder="Email address">
+                    </div>
+
+                    <div class="">
+                        <button type="submit" class="btn btn-primary"> Subscribe
+                            <i class="fa fa-arrow-circle-right fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+         </div>
+       </div>
+     </section>
+   </div>
+ </footer>
+
   </body>
 </html>

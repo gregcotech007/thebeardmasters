@@ -5,12 +5,12 @@
 
 {% block content %}
 
-<!-- Custom Error 404 Page -->
+<!-- Custom Error 500 Page -->
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
         <div class="col-12 mt-4 mb-2 txt-drk">
-            <h1 class="mb-0">404 Error</h1>
+            <h1 class="mb-0">500 Error</h1>
         </div>
         <div class="col-12">
             <hr class="divide-rule">
@@ -19,7 +19,7 @@
     <div class="row mb-5">
         <div class="col-12 txt-drk">
             <h2 class="mb-4">Whoops!</h2>
-            <p class="txt-lrg">Page not found!/p>
+            <p class="txt-lrg">Server Error!</p>
             <a class="btn btn-black rounded-0" aria-label="Go to the booking page"
                 href="{% url 'booking' %}">Book Now
             </a>

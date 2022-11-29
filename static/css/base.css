@@ -180,6 +180,11 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
