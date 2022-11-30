@@ -218,7 +218,7 @@ if 'USE_AWS' in os.environ:
 
 
 # Stripe
-FREE_DELIVERY_THRESHOLD = 0 # Updated to Zero before online products are added
+FREE_DELIVERY_THRESHOLD = 0 # Updated to Zero before online services are added
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')

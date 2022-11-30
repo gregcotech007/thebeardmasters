@@ -7,19 +7,22 @@ from .forms import ReviewForm
 from .models import Review
 
 from profiles.models import UserProfile
+from bookings.models import Booking
 
 
 @login_required
-def add_review(request):
+def add_review(request, booking_id):
     """
     A view to return the contact page.
     """
     profile = get_object_or_404(UserProfile, user = request.user)
+    booking = get_object_or_404(Booking, pk = booking_id)
     if request.method == 'POST':
         review_form = ReviewForm(request.POST)
         if review_form.is_valid():
             review = review_form.save(commit = False)
             review.user_profile = profile
+            review.booking = booking
             review.save()
             messages.success(
                 request, f'Thank you for your review.')
@@ -33,6 +36,7 @@ def add_review(request):
 
     context = {
         'review_form': review_form,
+        'booking': booking,
     }
 
     return render(request, 'reviews/add_review.html', context)

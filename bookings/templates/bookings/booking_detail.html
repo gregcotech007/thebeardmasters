@@ -42,6 +42,11 @@
                     {% else %}
                     <small class="text-muted">No Rating</small>
                     {% endif %}
+                    {% if request.user.is_authenticated %}
+                        <small class="ml-3">
+                            <a href="{% url 'add_review' booking.id %}">Leave Review</a>
+                        </small>
+                    {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_booking' booking.id %}">Edit</a> | 
