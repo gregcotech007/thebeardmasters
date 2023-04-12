@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 # DEBUG = False
 
-ALLOWED_HOSTS = ['thebeardmasters.herokuapp.com', 'localhost', '8000-gregcotech0-thebeardmas-xca8nknn5kz.ws-eu77.gitpod.io']
+ALLOWED_HOSTS = ['thebeardmasters.herokuapp.com', 'localhost']
 
 
 # Application definition
