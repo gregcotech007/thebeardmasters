@@ -147,7 +147,253 @@ Wireframes were created for the different device types as follows:
 
 [CI Python Linter - Pep8](https://pep8ci.herokuapp.com/)
 
+<table>
+    <tr>
+        <th>Resource Used</th>
+        <th>Code Tested</th>
+        <th>Example</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>W3C CSS Validation</td>
+        <td>base.css</td>
+        <td><img src="media/testing/css_val_pass.png" alt="style.css"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>home.html</td>
+        <td><img src="media/testing/html_val_pass_home.png" alt="home.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>login.html</td>
+        <td><img src="media/testing/html_val_pass_login.png" alt="login.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>post_form.html</td>
+        <td><img src="media/testing/html_val_pass_post-new.png" alt="post_form.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>post_detail.html</td>
+        <td><img src="media/testing/html_val_pass_post-detail.png" alt="post_detail.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>profile.html</td>
+        <td><img src="media/testing/html_val_pass_profile.png" alt="profile.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/admin.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/apps.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/apps.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/forms.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/models.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/models.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/urls.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+        <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/view.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="blog/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/admin.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/apps.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/apps.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/forms.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/models.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/models.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/signals.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/signals.py"/></td>
+        <td>Pass</td>
+    </tr>
+        <tr>
+        <td>Pep8 Validator</td>
+        <td>users/view.py</td>
+        <td><img src="media/testing/pep8_val_pass.png" alt="users/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+</table>
 
+[Back to top ⇧](#top)
+
+### Lighthouse Testing
+The site was also tested for the Lighthouse Performance Score and the results were as follows:
+<details>
+  <summary>Lighthouse Testing - Mobile</summary>
+
+  ![Mobile iOS](media/testing/lighthouse_mobile_pass.png "Lighthouse Testing for Mobile - Passed")
+</details>
+<details>
+  <summary>Lighthouse Testing - Desktop</summary>
+
+  ![Desktop MacOS](media/testing/lighthouse_desktop_pass.png "Lighthouse Testing for Desktop - Passed")
+</details>
+
+[Back to top ⇧](#top)
+
+### Manual Testing
+<table>
+    <tr>
+        <th>Feature Tested</th>
+        <th>Testing Method</th>
+        <th>Example</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Homepage</td>
+        <td>Enter homepage address in browser and test all links</td>
+        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Blank Fields</td>
+        <td> Each sign-in field left blank and submitted, to ensure error message appeared.</td>
+        <td><img src="media/testing/login_blank_fields.png" alt="Login Black Fields"/>></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Incorrect Username Field</td>
+        <td>Tested with incorrect spelling.</td>
+        <td><img src="media/testing/login_incorrect-username.png" alt="Login Incorrect Username"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Incorrect Password Field</td>
+        <td>Tested with incorrect spelling and capitalisation to verify account security.</td>
+        <td><img src="media/testing/login_incorrect-password.png" alt="Login Incorrect Password"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Like Button</td>
+        <td>Like button is not activated.</td>
+        <td><img src="media/testing/not_signed-in_nolike.png" alt="No Like Button as not User not Logged-in"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Comments</td>
+        <td>Comment box is not available to post comment on post.</td>
+        <td><img src="media/testing/not_signed-in_no-comment-box.png" alt="Scenic Destinations Homepage"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Add Post</td>
+        <td>No option to Add post.</td>
+        <td><img src="media/testing/not_signed-in_add-post.png" alt="No Create Post as not User not Logged-in"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Add Post</td>
+        <td>Add Post option displayed in navbar.</td>
+        <td><img src="media/testing/signed-in_add-post.png" alt="Add Post option displayed in navbar"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Like Button</td>
+        <td>Like button is activated on post.</td>
+        <td><img src="media/testing/signed-in_like.png" alt="Logged-in User Like Button"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Comment Box</td>
+        <td>Can leave comment on post and submit for Admin approval.</td>
+        <td><img src="media/testing/signed-in_comment.png" alt="Logged-in User Comment Box"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Add Post</td>
+        <td>Add post without image, displays default image.</td>
+        <td><img src="media/testing/add-post_default-image.png" alt="Author Create Post without image, use default image"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Add Post</td>
+        <td>Add Post with image, displays default image.</td>
+        <td><img src="media/testing/signed-in_add-post-image.png" alt="Author Create Post with image"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Update Post</td>
+        <td>Update Post as author. Only author of post can update it.</td>
+        <td><img src="media/testing/signed-in_update-post.png" alt="Author Update Post"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Delete Post</td>
+        <td>Delete post as author. Only author of post can delete it. Are you sure you want to delete?</td>
+        <td><img src="mmedia/testing/author_delete-post.png" alt="Author Delete Post"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Invalid Email Field</td>
+        <td>Invalid email was tested to ensure error message appeared.</td>
+        <td><img src="media/testing/register_invalid-email.png" alt="Invalid Email Field"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Common Password</td>
+        <td>A common password was tested to check security.</td>
+        <td><img src="media/testing/register_common-password.png" alt="Common Password"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Short Password</td>
+        <td>A short password was tested for error message when using less than 8 characters.</td>
+        <td><img src="media/testing/register_password-too-short.png" alt="Short Password"/></td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+[Back to top ⇧](#top)
 
 ## Deployment
 
