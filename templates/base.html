@@ -201,4 +201,13 @@
  </footer>
 
   </body>
+
+    <script>
+        $('.toast').toast('show');
+        // Remove toast after 3.5 seconds
+        setTimeout(function () {
+            $('.message-container').fadeOut('slow');
+        }, 3500);
+    </script>
+
 </html>
