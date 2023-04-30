@@ -1,1 +1,51 @@
 <h1>test</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <h2 class="text-center mb-4">OUR STORY</h2>
+    <p>
+        The Beard Masters is a professional beard trimming shop that specializes in providing high-quality grooming
+        services to men who are concerned with their appearance and style. The Beard Masters, located in the heart of
+        the city, provides a wide range of beard trimming services, including beard shaping, beard trimming, beard
+        styling, and beard maintenance.
+    </p>
+    <p>
+        We understand that a well-groomed beard is a symbol of masculinity and confidence at The Beard Masters. That is
+        why we only hire the best beard trimmers who are passionate about assisting men in achieving their desired look.
+        Our team is committed to providing our clients with personalized services that address their specific beard
+        grooming requirements.
+    </p>
+    <p>
+        Our beard trimming services are intended to assist men in looking and feeling their best. We only use
+        high-quality grooming products and tools, and our staff is specially trained to provide precision beard trimming
+        services that enhance the natural contours of the face. Our team of beard masters can help you achieve the look
+        you want, whether it's a classic, well-groomed look or something more edgy and modern.
+    </p>
+    <p>
+        The Beard Masters takes pride in our dedication to quality. We understand that each client is unique, so before
+        providing our services, we take the time to listen to your needs and preferences. Our goal is for every client
+        to leave our shop feeling confident and pleased with their new look.
+    </p>
+    <p>
+        A well-groomed beard, according to The Beard Masters, is a statement of style and confidence. That is why we are
+        dedicated to providing our clients with the best grooming services and products available. Look no further than
+        The Beard Masters for a professional beard trimming shop dedicated to helping men look and feel their best.
+    </p>
+</div>
+
+{% endblock %}

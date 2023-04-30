@@ -12,7 +12,10 @@ body {
 
 .text-white {
     color: #ff8000 !important;
+}
 
+.footer-main {
+    background-color: #f2f2f2;
 }
 
 /* from Bulma */

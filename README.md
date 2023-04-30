@@ -161,33 +161,21 @@ Wireframes were created for the different device types as follows:
         <td>Pass</td>
     </tr>
     <tr>
-        <td>HTML Checker</td>
+        <td>W3C HTML Validation</td>
         <td>home.html</td>
-        <td><img src="media/testing/html_val_pass_home.png" alt="home.html"/></td>
+        <td><img src="media/testing/html_val_landingpage_pass.png" alt="home.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>HTML Checker</td>
-        <td>login.html</td>
-        <td><img src="media/testing/html_val_pass_login.png" alt="login.html"/></td>
+        <td>W3C HTML Validation</td>
+        <td>Account Signup</td>
+        <td><img src="media/testing/html_val_signup_pass.png" alt="Account Signup"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>HTML Checker</td>
-        <td>post_form.html</td>
-        <td><img src="media/testing/html_val_pass_post-new.png" alt="post_form.html"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>HTML Checker</td>
-        <td>post_detail.html</td>
-        <td><img src="media/testing/html_val_pass_post-detail.png" alt="post_detail.html"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>HTML Checker</td>
-        <td>profile.html</td>
-        <td><img src="media/testing/html_val_pass_profile.png" alt="profile.html"/></td>
+        <td>W3C HTML Validation</td>
+        <td>Filter By Rating</td>
+        <td><img src="media/testing/html_val_byrating_pass.png" alt="Filter By Rating"/></td>
         <td>Pass</td>
     </tr>
     <tr>
@@ -292,103 +280,121 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Homepage</td>
         <td>Enter homepage address in browser and test all links</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/desktop-homepage.png" alt="The Beard Masters Homepage"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Login - Blank Fields</td>
-        <td> Each sign-in field left blank and submitted, to ensure error message appeared.</td>
-        <td><img src="media/testing/login_blank_fields.png" alt="Login Black Fields"/>></td>
+        <td>Our Story</td>
+        <td>A page displays information about the company story</td>
+        <td><img src="media/testing/html_ourstory_pass.png" alt="Our Story"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Login - Incorrect Username Field</td>
-        <td>Tested with incorrect spelling.</td>
-        <td><img src="media/testing/login_incorrect-username.png" alt="Login Incorrect Username"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Login - Incorrect Password Field</td>
-        <td>Tested with incorrect spelling and capitalisation to verify account security.</td>
-        <td><img src="media/testing/login_incorrect-password.png" alt="Login Incorrect Password"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>No Logged-in User - Like Button</td>
-        <td>Like button is not activated.</td>
-        <td><img src="media/testing/not_signed-in_nolike.png" alt="No Like Button as not User not Logged-in"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>No Logged-in User - Comments</td>
-        <td>Comment box is not available to post comment on post.</td>
-        <td><img src="media/testing/not_signed-in_no-comment-box.png" alt="Scenic Destinations Homepage"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>No Logged-in User - Add Post</td>
-        <td>No option to Add post.</td>
-        <td><img src="media/testing/not_signed-in_add-post.png" alt="No Create Post as not User not Logged-in"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Add Post</td>
-        <td>Add Post option displayed in navbar.</td>
-        <td><img src="media/testing/signed-in_add-post.png" alt="Add Post option displayed in navbar"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Like Button</td>
-        <td>Like button is activated on post.</td>
-        <td><img src="media/testing/signed-in_like.png" alt="Logged-in User Like Button"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Comment Box</td>
-        <td>Can leave comment on post and submit for Admin approval.</td>
-        <td><img src="media/testing/signed-in_comment.png" alt="Logged-in User Comment Box"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Add Post</td>
-        <td>Add post without image, displays default image.</td>
-        <td><img src="media/testing/add-post_default-image.png" alt="Author Create Post without image, use default image"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Add Post</td>
-        <td>Add Post with image, displays default image.</td>
-        <td><img src="media/testing/signed-in_add-post-image.png" alt="Author Create Post with image"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Update Post</td>
-        <td>Update Post as author. Only author of post can update it.</td>
-        <td><img src="media/testing/signed-in_update-post.png" alt="Author Update Post"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Logged-in User - Delete Post</td>
-        <td>Delete post as author. Only author of post can delete it. Are you sure you want to delete?</td>
-        <td><img src="mmedia/testing/author_delete-post.png" alt="Author Delete Post"/></td>
+        <td>Registration - Blank Fields</td>
+        <td>Submit form with blank fields.</td>
+        <td><img src="media/testing/signup_val_blankfields_pass.png" alt="Submit Blank Fields"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Invalid Email Field</td>
-        <td>Invalid email was tested to ensure error message appeared.</td>
-        <td><img src="media/testing/register_invalid-email.png" alt="Invalid Email Field"/></td>
+        <td>User email already registered.</td>
+        <td><img src="media/testing/signup_val_useremailalreadyregistered_pass.png" alt="Email already Registered"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Common Password</td>
         <td>A common password was tested to check security.</td>
-        <td><img src="media/testing/register_common-password.png" alt="Common Password"/></td>
+        <td><img src="media/testing/signup_val_passwordtoocommon_pass.png" alt="Common Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Registration - Short Password</td>
-        <td>A short password was tested for error message when using less than 8 characters.</td>
-        <td><img src="media/testing/register_password-too-short.png" alt="Short Password"/></td>
+        <td>Registration - Email Similiar to Username</td>
+        <td>An email that is similiar to username was tested for error message.</td>
+        <td><img src="media/testing/signup_val_passwordsimiliarusername_pass.png" alt="Password too similiar to Username"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Signup Successful - Verify Email</td>
+        <td>Registration Signup was successful. Toast shows Success Message.</td>
+        <td><img src="media/testing/signup_toastsuccess_verifyemail_pass.png" alt="Signup Success Verify Email"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Incorrect Username or Password</td>
+        <td>Incorrect password was tested for error message.</td>
+        <td><img src="media/testing/login_val_incorrectusernameorpassword_pass.png" alt="Incorrect Username or Password"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>My Account - Update Profile Information</td>
+        <td>View My Account options to View Profile or Logout of account.</td>
+        <td><img src="media/testing/html_myaccount_pass.png" alt="My Account"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>My Account - Update Profile Information</td>
+        <td>Add User Information to update and save to User Profile.</td>
+        <td><img src="media/testing/html_profileupdate_pass.png" alt="Update User Profile"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>My Account - User Profile Update Success</td>
+        <td>Confirmation of User Profile update success with Success Toast.</td>
+        <td><img src="media/testing/html_profileupdatesuccess_pass.png" alt="User Profile Update Success"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>All Bookings - By Price</td>
+        <td>Sort All Bookings by Price in Ascending Order</td>
+        <td><img src="media/testing/allbookings_byprice_pass.png" alt="All Bookings, sorted by Price"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>All Bookings - By Rating</td>
+        <td>Sort All Bookings by Rating in Desending Order</td>
+        <td><img src="media/testing/allbookings_byrating_pass.png" alt="All Bookings, sorted by Rating"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>All Bookings - By Category</td>
+        <td>Sort All Bookings by Category</td>
+        <td><img src="media/testing/allbookings_bycategory_pass.png" alt="All Bookings, sorted by Category"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>All Bookings - All Bookings</td>
+        <td>Show All Bookings</td>
+        <td><img src="media/testing/allbookings_allbookings_pass.png" alt="All Bookings, show all Bookings"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Filter By - Adult</td>
+        <td>Filter Bookings by Adult</td>
+        <td><img src="media/testing/filterby_adult_pass.png" alt="Filter by, Adult"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Filter By - OAP/Student</td>
+        <td>Filter Bookings by Adult</td>
+        <td><img src="media/testing/filterby_oap-students_pass.png" alt="Filter by, OAP/Students"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Filter By - Child</td>
+        <td>Filter Bookings by Adult</td>
+        <td><img src="media/testing/filterby_child_pass.png" alt="Filter by, Child"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Filter By - All Filters</td>
+        <td>Show Bookings by All Filters</td>
+        <td><img src="media/testing/filterby_allbookings_pass.png" alt="Filter by, All Filters"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Shopping Bag</td>
+        <td>Show Bookings by All Filters</td>
+        <td><img src="media/testing/html_shoppingbag_pass.png" alt="Filter by, All Filters"/></td>
         <td>Pass</td>
     </tr>
 </table>
