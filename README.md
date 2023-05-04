@@ -5,7 +5,7 @@ After the user has logged in, they can then add services to their basket, amend 
 
 Visit the deployed website: [The Beard Masters](https://thebeardmasters.herokuapp.com/).
 
-![The Beard Masters - Am I Responsive?](media/readme_images/testing/amiresponsive.png "Am I Responsive?")
+![The Beard Masters - Am I Responsive?](media/beardmasters_amiresponsive_pass.png "Am I Responsive?")
 
 ## Table of Contents
 1. [User Experience (UX)](#user-experience-UX)
@@ -46,8 +46,23 @@ User Stories are demonstrated in the manual testing section below.
 
 [User Stories](https://github.com/users/gregcotech007/projects/1/)
 
-- As a Site User, I can ... so that.....
-- As a Site Admin, ... so that.....
+- As a User, I can view a list of services so that I can select some to purchase.
+- As a User, I can view individual services details so that I can choose what suits my needs.
+- As a User, I want to be able to quickly identify deals and special offers so that I can take advantage of special savings of products and services I'd like to purchase.
+- As a User, I want to be able to book an appointment so that I can schedule an available appointment that suits me.
+- As a User, I want to be able to purchase gift voucher(s) so that I can give to my family and friends.
+- As a User, I want to be able to easily view the total of my purchases at any time so that I can avoid spending too much.
+- As a Site User, I want to be able to register for an account so that I can have a personal account and be able to view my profile.
+- As a Site User, I want to be able to easily login and logout so that I can access my personal account information.
+- As a Site User, I want to be able to easily recover my password in case I forget it, so that I can recover access to my account.
+- As a Site User, I want to be able to receive an email confirmation after registration so that I can verify my account registration was successful.
+- As a Site User, I want to be able to have a personalised user profile so that I can view my personal booking and order history, booking and order confirmations and save my payment information.
+- As a User, I want to be able to sort a list of available services so that I can easily identify the best rated, best priced and easily categorise the services.
+- As a User, I want to be able to sort a specific category of services, so that I can find the best-priced or best-rated service in a specific category, or sort the services in that category by name.
+- As a User, I want to be able to search for a service by name or description so that I can find a specific service that I would like to purchase.
+- As a User, I want to be able to search for a product by name or description so that I can find a specific product I would like to purchase.
+- As a User, I want to be able to easily see what I've searched for and the number of results, so that I can quickly decide whether the service I want is available.
+- As a Site Admin, I want to be able to manage services offered, by adding, updating and deleting services so that the all services are up to date and available to book.
 
 ### Colour Scheme
 [Coolours](https://coolors.co/)
@@ -122,6 +137,9 @@ Wireframes were created for the different device types as follows:
 </table>
 
 ### Future Features
+- Add a list of products to the online store so that the Customer can purchase alongside their services booking and have it shipped or collect instore.
+- Add an option to purchase multiple denominations of Gift Cards that can be used online or instore.
+- Provide an option to reset forgotten password.
 
 ## Technologies Used
 
@@ -129,6 +147,9 @@ Wireframes were created for the different device types as follows:
 * [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS 3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://www.python.org/)
+* [Django Framework](https://www.djangoproject.com/)
+
 
 ### Programs Used
 * [GitPod](https://gitpod.io/) was used for writing code and pushing to main on GitHub.
@@ -157,31 +178,91 @@ Wireframes were created for the different device types as follows:
     <tr>
         <td>W3C CSS Validation</td>
         <td>base.css</td>
-        <td><img src="media/testing/css_val_pass.png" alt="style.css"/></td>
+        <td><img src="media/testing/css/css_val_pass.png" alt="style.css"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>W3C HTML Validation</td>
         <td>home.html</td>
-        <td><img src="media/testing/html_val_landingpage_pass.png" alt="home.html"/></td>
+        <td><img src="media/testing/html/html_val_home_pass.png" alt="home.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>our_story.html</td>
+        <td><img src="media/testing/html/html_val_our-story_pass.png" alt="our_story.html"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Bookings Sort By Price</td>
+        <td><img src="media/testing/html/html_val_bookings_sort-price_pass.png" alt="Bookings Sort By Price"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Bookings Sort By Rating</td>
+        <td><img src="media/testing/html/html_val_bookings_sort-rating_pass.png" alt="Bookings Sort By Rating"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Bookings Sort By Category</td>
+        <td><img src="media/testing/html/html_val_bookings_sort-category_pass.png" alt="Bookings Sort By Category"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Bookings - All Bookings</td>
+        <td><img src="media/testing/html/html_val_bookings_bookings_pass.png" alt="Bookings - All Bookings"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Filter By Adult</td>
+        <td><img src="media/testing/html/html_val_filterby_adult_pass.png" alt="Filter By Adult"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Filter By OAP / Student</td>
+        <td><img src="media/testing/html/html_val_filterby_oap-student_pass.png" alt="Filter By OAP / Student"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Filter By Child</td>
+        <td><img src="media/testing/html/html_val_filterby_child_pass.png" alt="Filter By Child"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Filter By All Filters</td>
+        <td><img src="media/testing/html/html_val_filterby_adult-oap-student-child_pass.png" alt="Filter By All Filters"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>W3C HTML Validation</td>
         <td>Account Signup</td>
-        <td><img src="media/testing/html_val_signup_pass.png" alt="Account Signup"/></td>
+        <td><img src="media/testing/html/html_val_account-signup_pass.png" alt="Account Signup"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>W3C HTML Validation</td>
-        <td>Filter By Rating</td>
-        <td><img src="media/testing/html_val_byrating_pass.png" alt="Filter By Rating"/></td>
+        <td>Account Login</td>
+        <td><img src="media/testing/html/html_val_account-login_pass.png" alt="Account Login"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>W3C HTML Validation</td>
+        <td>Account Logout</td>
+        <td><img src="media/testing/html/html_val_account-logout_pass.png" alt="Account Logout"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>blog/admin.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/admin.py"/></td>
+        <td>bag/context.py</td>
+        <td><img src="media/testing/pep8/pep8_val_contexts-py_pass.png" alt="bag/context.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
@@ -395,6 +476,63 @@ The site was also tested for the Lighthouse Performance Score and the results we
         <td>Shopping Bag</td>
         <td>Show Bookings by All Filters</td>
         <td><img src="media/testing/html_shoppingbag_pass.png" alt="Filter by, All Filters"/></td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Booking Order</th>
+        <th>Step Completed</th>
+        <th>Image Result</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Homepage</td>
+        <td>Step 1: Go to homepage</td>
+        <td><img src="media/testing/orders/order_homepage_pass.png" alt="The Beard Masters Homepage"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login</td>
+        <td>Step 2: Go to Account Login Page</td>
+        <td><img src="media/testing/orders/order_accountsignin_pass.png" alt="Account Login Page"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>My Account</td>
+        <td>Step 3: My Account Page</td>
+        <td><img src="media/testing/orders/order_myaccount_pass.png" alt="My Account Page"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>All Services Booking</td>
+        <td>Step 4: Show All Services Booking Page</td>
+        <td><img src="media/testing/orders/order_allservices_pass.png" alt="All Services Booking"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Shopping Bag</td>
+        <td>Step 5: Show current item added to Shopping Bag</td>
+        <td><img src="media/testing/orders/order_shoppingbag_pass.png" alt="Shopping Bag Item"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Shopping Bag Checkout</td>
+        <td>Step 6: Show Shopping Bag Checkout Items</td>
+        <td><img src="media/testing/orders/order_shoppingbag-checkout_pass.png" alt="Shopping Bag Checkout Items"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Order Complete Confirmation</td>
+        <td>Step 7: Show Order Complete Confirmation</td>
+        <td><img src="media/testing/orders/order_ordercomplete_pass.png" alt="Order Complete Confirmation Page"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Account Signout</td>
+        <td>Step 8: Confirm to Sign Out of Account </td>
+        <td><img src="media/testing/orders/order_signoutconfirm_pass.png" alt="Confirm Account Signout"/></td>
         <td>Pass</td>
     </tr>
 </table>
