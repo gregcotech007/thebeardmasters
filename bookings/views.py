@@ -9,6 +9,7 @@ from .forms import BookingForm
 
 # Create your views here.
 
+
 def all_bookings(request):
     """ A view to show all bookings, including sorting and search queries """
 
@@ -41,10 +42,13 @@ def all_bookings(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!"
+                               )
                 return redirect(reverse('bookings'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             bookings = bookings.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -70,6 +74,7 @@ def booking_detail(request, booking_id):
 
     return render(request, 'bookings/booking_detail.html', context)
 
+
 @login_required
 def add_booking(request):
     """ Add a booking to the Bookings page """
@@ -84,7 +89,9 @@ def add_booking(request):
             messages.success(request, 'Successfully added booking!')
             return redirect(reverse('booking_detail',  args=[booking.id]))
         else:
-            messages.error(request, 'Failed to add booking. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add booking. Please ensure the form is valid.')
     else:
         form = BookingForm()
 
@@ -94,6 +101,7 @@ def add_booking(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_booking(request, booking_id):
@@ -110,7 +118,9 @@ def edit_booking(request, booking_id):
             messages.success(request, 'Successfully updated booking!')
             return redirect(reverse('booking_detail', args=[booking.id]))
         else:
-            messages.error(request, 'Failed to update booking. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update booking. Please ensure the form is valid.')
     else:
         form = BookingForm(instance=booking)
         messages.info(request, f'You are editing {booking.name}')
@@ -122,6 +132,7 @@ def edit_booking(request, booking_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_booking(request, booking_id):

@@ -17,4 +17,4 @@ class NewsletterForm(forms.ModelForm):
         fields = [
             'title',
             'message',
-            ]
+        ]

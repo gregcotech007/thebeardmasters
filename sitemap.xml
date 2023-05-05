@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bag/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/our_story/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=adult</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=oap,student</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=child</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=adult,oap,student,child</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/5/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/2/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=student</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/3/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/?category=oap</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/1/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/6/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/7/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/4/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/8/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/9/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thebeardmasters.herokuapp.com/bookings/10/</loc>
+  <lastmod>2023-05-05T09:46:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

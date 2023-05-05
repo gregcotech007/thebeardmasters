@@ -262,73 +262,205 @@ Wireframes were created for the different device types as follows:
     <tr>
         <td>Pep8 Validator</td>
         <td>bag/context.py</td>
-        <td><img src="media/testing/pep8/pep8_val_contexts-py_pass.png" alt="bag/context.py"/></td>
+        <td><img src="media/testing/pep8/pep8_val_bag-contexts-py_pass.png" alt="bag/context.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>blog/apps.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/apps.py"/></td>
+        <td>bag/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bag-urls-py_pass.png" alt="bag/urls.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>blog/forms.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/forms.py"/></td>
+        <td>bag/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bag-urls-py_pass.png" alt="bag/views.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>blog/models.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/models.py"/></td>
+        <td>beardmasters/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_beardmasters-urls-py_pass.png" alt="beardmasters/urls.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>blog/urls.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/urls.py"/></td>
-        <td>Pass</td>
-    </tr>
-        <tr>
-        <td>Pep8 Validator</td>
-        <td>blog/view.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="blog/views.py"/></td>
+        <td>beardmasters/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_beardmasters-views-py_pass.png" alt="beardmasters/views.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>users/admin.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/admin.py"/></td>
+        <td>bookings/admin.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-admin-py_pass.png" alt="bookings/admin.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>users/apps.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/apps.py"/></td>
+        <td>bookings/apps.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-apps-py_pass.png" alt="bookings/apps.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>users/forms.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/forms.py"/></td>
+        <td>bookings/forms.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-forms-py_pass.png" alt="bookings/forms.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>users/models.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/models.py"/></td>
+        <td>bookings/models.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-models-py_pass.png" alt="bookings/models.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>users/signals.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/signals.py"/></td>
+        <td>bookings/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-urls-py_pass.png" alt="bookings/urls.py"/></td>
         <td>Pass</td>
     </tr>
-        <tr>
+    <tr>
         <td>Pep8 Validator</td>
-        <td>users/view.py</td>
-        <td><img src="media/testing/pep8_val_pass.png" alt="users/views.py"/></td>
+        <td>bookings/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-views-py_pass.png" alt="bookings/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>bookings/widgets.py</td>
+        <td><img src="media/testing/pep8/pep8_val_bookings-widgets-py_pass.png" alt="bookings/widgets.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/admin.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-admin-py_pass.png" alt="checkout/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/forms.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-forms-py_pass.png" alt="checkout/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/models.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-models-py_pass.png" alt="checkout/models.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/signals.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-signals-py_pass.png" alt="checkout/signals.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-urls-py_pass.png" alt="checkout/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-views-py_pass.png" alt="checkout/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/webhooks_handler.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-webhookhandler-py_pass.png" alt="checkout/webhooks_handler.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>checkout/webhooks.py</td>
+        <td><img src="media/testing/pep8/pep8_val_checkout-webhooks_pass.png" alt="checkout/webhooks.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>enquiries/admin.py</td>
+        <td><img src="media/testing/pep8/pep8_val_enquiries-admin_pass.png" alt="enquiries/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>enquiries/summary_emails.py</td>
+        <td><img src="media/testing/pep8/pep8_val_enquiries-summary-email_pass.png" alt="summary_emails.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>enquiries/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_enquiries-views_pass.png" alt="enquiries/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>home/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_home-views_pass.png" alt="home/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>newsletter/forms.py</td>
+        <td><img src="media/testing/pep8/pep8_val_newsletter-forms_pass.png" alt="newsletter/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>newsletter/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_newsletter-urls_pass.png" alt="newsletter/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>newsletter/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_newsletter-views_pass.png" alt="newsletter/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>profiles/forms.py</td>
+        <td><img src="media/testing/pep8/pep8_val_profiles-forms_pass.png" alt="profiles/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>profiles/models.py</td>
+        <td><img src="media/testing/pep8/pep8_val_profiles-models_pass.png" alt="profiles/models.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>profiles/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_profiles-urls_pass.png" alt="profiles/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>profiles/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_profiles-views_pass.png" alt="profiles/views.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>reviews/admin.py</td>
+        <td><img src="media/testing/pep8/pep8_val_reviews-admin_pass.png" alt="reviews/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>reviews/urls.py</td>
+        <td><img src="media/testing/pep8/pep8_val_reviews-urls_pass.png" alt="reviews/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>reviews/views.py</td>
+        <td><img src="media/testing/pep8/pep8_val_reviews-views_pass.png" alt="reviews/views.py"/></td>
         <td>Pass</td>
     </tr>
 </table>
@@ -715,6 +847,7 @@ To clone a copy of the code in the repository, the following steps are required:
 * The 'Roboto' and "Lato" fonts were used from [Google Fonts](https://fonts.google.com/).
 * The website icons were used from [Font Awesome](https://fontawesome.com/).
 * Bootstrap CSS was used for styling from [Bootstrap CSS](https://getbootstrap.com/).
+* Freepik was used for images from [Freepik](https://www.freepik.com).
 
 ### Media
 The Post Resources used:

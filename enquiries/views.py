@@ -7,12 +7,13 @@ from .models import EnquiryMessage
 from .summary_email import send_summary_email
 from profiles.models import UserProfile
 
+
 @login_required
 def enquiry(request):
     """
     A view to return the enquiry page.
     """
-    profile = get_object_or_404(UserProfile, user = request.user)
+    profile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
         enquiry_form = EnquiryForm(request.POST)
         if enquiry_form.is_valid():

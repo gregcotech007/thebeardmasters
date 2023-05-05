@@ -15,12 +15,12 @@ def add_review(request, booking_id):
     """
     A view to return the contact page.
     """
-    profile = get_object_or_404(UserProfile, user = request.user)
-    booking = get_object_or_404(Booking, pk = booking_id)
+    profile = get_object_or_404(UserProfile, user=request.user)
+    booking = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
         review_form = ReviewForm(request.POST)
         if review_form.is_valid():
-            review = review_form.save(commit = False)
+            review = review_form.save(commit=False)
             review.user_profile = profile
             review.booking = booking
             review.save()

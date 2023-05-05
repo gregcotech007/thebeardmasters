@@ -37,7 +37,9 @@ def subscribe(request):
 def newsletter(request):
     """Newsletter Form View & Email to Subscribers"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only Administrators are authorised to access Newsletter')
+        messages.error(
+            request, 'Sorry, only Administrators \
+                are authorised to access Newsletter')
         return redirect(reverse('home'))
 
     emails = Subscriber.objects.all()
